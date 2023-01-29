@@ -1,0 +1,64 @@
+% Klasa, dwustronna, czcionka 12 pt
+\documentclass[twoside, 12pt]{article}
+
+% Język dokumentu
+\usepackage[polish]{babel}
+\selectlanguage{polish}
+
+% Ustawienia marginesów
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=3cm,right=2cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+%__________PACZKI__________%
+% Tutaj należy dołączyć potrzebne paczki
+% Komentować cel użycia każdej załączonej paczki
+
+\usepackage{indentfirst} %% Wcięcia w pierwszych akapitach
+\usepackage[T1]{fontenc} %% Rozszerzenie dla polskich znaków
+\usepackage[justification=centering]{caption} %% Centrowanie podpisów
+\usepackage{url} %% Hyperlinki do stron internetowych
+\usepackage{textcomp} %% Dodatkowe symbole (stopnie etc.)
+\linespread{1.5} %% Interlinia 1.5
+\usepackage{titlesec} %% Zaczynanie rozdziałów od nowej strony
+\usepackage{blindtext} %% Wstawianie Lorem Ipsum
+\usepackage{hyperref} %% Hyperlinki wewnątrz dokumentu
+
+%\usepackage{authblk} %% Afiliacje autorów
+%\usepackage{subcaption} %% Podwójne podpisy pod rysunkami
+%\usepackage{placeins} %% Floatbarrier, kontrola przenoszenia stron
+
+%__________KOMENDY__________%
+% Tutaj należy zawrzeć wszystkie komendy odnoszące się do załączonych paczek
+
+\newcommand{\sectionbreak}{\clearpage} %% Zaczynanie rozdziałów od nowej strony
+\numberwithin{equation}{section} %% Numeracja równań w stylu (rozdział.numer_w_rozdziale)
+
+%% Ustawienia paczki hyperref, uzupełnić własną nazwą
+\hypersetup{
+    colorlinks=false,
+    pdftitle={Praca Magisterska},
+    pdfpagemode=FullScreen,
+    }
+
+%__________POCZĄTEK_DOKUMENTU__________%
+\begin{document}
+
+%%%%%%%%%% SPIS TREŚCI %%%%%%%%%%
+\tableofcontents
+
+%%%%%%%%%% SPIS ILUSTRACJI %%%%%%%%%%
+\newpage
+\listoffigures
+
+%%%%%%%%%% SPIS TABEL %%%%%%%%%%
+\newpage
+\listoftables
+
+%%%%%%%%%% Rozdziały %%%%%%%%%%
+\section{Wstęp}
+
+%__________KONIEC_DOKUMENTU__________%
+\end{document}
